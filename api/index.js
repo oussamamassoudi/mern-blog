@@ -5,6 +5,7 @@ const dotenv = require("dotenv");
 require('dotenv').config();
 const app = express();
 
+
 const connectDB=async()=>{
     try {
        await mongoose.connect(process.env.DB_URI);
